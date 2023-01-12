@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* :root {
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&family=Playfair+Display+SC:wght@700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;600;700;800&display=swap');
+
+body {
+  background-color: #000;
+  /* background-color: #101010; */
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.55;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  margin: 0 100px;
+  width: 1240px;
+}
+
+.greeting-wrap {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(20px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100vw;
+  height: 898px;
+  margin-top: -910px;
+  background-color: rgba(217, 217, 217, 0.2);
+ 
+}
+
+.greeting-layer__title {
+  /* position: absolute; */
+  font-family: "Dosis", sans-serif;
+  font-weight: 400;
+  font-size: 280px;
+  color: #D9D9D9;
+}
+
+.greeting-layer__btn {
+  /* position: absolute; */
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  color: #D9D9D9;
+  width: 140px;
+  height: 45px;
+  background: none;
+  cursor: pointer;
+  border: solid 1px #fff;
+  border-radius: 30px;
+}
+
+/* Header */
+
+/* обертка для выранивания надписи и меню  */
+.wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  
+ 
+}
+
+
+/* надпись в шапке */
+.header__title {
+  flex-basis: 40%;
+  position: relative;
+  color: #fff;
+  
+}
+
+.header__title:hover{
+  
+  cursor: pointer;
+  text-shadow: 0 0 10px #FF0000,
+               0 0 20px #FF0000,
+               0 0 40px #FF0000,
+               0 0 60px #FF0000,
+               0 0 80px #FF0000;
+  /* padding: 2px;
+  backdrop-filter: blur(10px);
+  background-color: red; */
+}
+
+.header__title-text {
+  font-family: "Dosis", sans-serif;
+  color: #fff;
+  font-weight: 700;
+  font-size: 100px;
+}
+
+.header__text {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-weight: 600;
+  font-size: 53px;
+  margin: 0 50px;
+  padding: 0 0 0 32px;
+}
+
+/* меню в шапке */
+
+.header__menu {
+  flex-basis: 60%;
+  margin: 90px 0px 90px 80px;
+}
+
+.header__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+}
+
+.header__list-item {
+  position: relative;
+  line-height: 1.35;
+  margin: 0;
+  padding: 0px;
+}
+
+.header__link {
+  font-family: "Dosis", sans-serif;
+  font-size: 120px;
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__link:hover{
+  cursor: pointer;
+  text-shadow: 0 0 10px #FF0000,
+               0 0 20px #FF0000,
+               0 0 40px #FF0000,
+               0 0 60px #FF0000,
+               0 0 80px #FF0000;
+}
+
+/* Main */
+
+.title {
+  font-family: "Dosis", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  width: 215px;
+}
+
+/* section about */
+
+.about {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  margin: 185px 0;
+}
+
+.about__img {
+  border: solid 1px #fff;
+  margin-left: 20px;
+  padding: 20px;
+  max-width: 290px;
+  max-height: 390px;
+}
+
+.about__title {
+  margin: -15px 0 0 142px;
+}
+
+.about__text {
+  border: solid 1px #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  padding: 15px;
+  width: 500px;
+}
+
+/* section skills */
+.skills {
+  margin-bottom: 80px;
+}
+
+.skills__wrap {
+  position: relative;
+  border: solid 1px #fff;
+  margin-bottom: 40px;
+  width: 420px;
+}
+
+.skills__title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 20px 20px 10px;
+}
+
+.skills__list {
+  list-style: none;
+  margin: 10px 20px;
+}
+
+.skills__list-item {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* section projects */
+
+.projects {
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.projects__title {
+  margin: 0 auto 30px;
+}
+
+.projects__hr-scroll {
+  display: flex;
+  position: relative;
+  
+}
+
+/* projects navigation buttons */
+.scroll-btn {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.scroll-btn--prev {
+  margin: 0 0 0 15px;
+  left: 0;
+  top: 50%;
+
+}
+.scroll-btn--next {
+margin: 0 15px 0 0;
+right: 0;
+top: 50%;
+}
+
+.btn{
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.projects__slider{
+  display: flex;
+  align-items: center;
+  
+  background-color: #0b2323;
+  width: 100%;
+  height: 500px;
+  overflow-y: hidden;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.projects__slider::-webkit-scrollbar {
+  display: none;
+}
+
+.projects__slider-item {
+  margin: 5px;
+  min-width: 520px;
+  height: 420px;
+}
+
+
+
+.projects__img{
+width: 100%;
+height: 100%;
+}
+
+/* section cantacts */
+
+.contacts {
+  margin-bottom: 140px;
+}
+
+.contacts__wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contacts__title {
+  margin-right: 175px;
+}
+
+.contacts__inner {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  width: 500px;
+  height: 300px;
+  padding: 15px;
+  align-items: center;
+  /* backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
+  box-shadow: 10px 10px 50px rgba(192, 192, 192, 0.3);
+  background: rgba(225, 225, 255, 0.1);
+  border-top: solid 1px rgba(225, 225, 255, 0.5);
+  border-left: solid 1px  rgba(225, 225, 255, 0.5);
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  border-radius: 5px;
+}
+
+.contacts__link {
+  font-size: 30px;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+.contacts__link--size {
+  display: flex;
+  align-items: center;
+  font-size: 23px;
+}
+
+.contacts__tel-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+.contacts__mail-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 15px;
+}
+
+
+.contacts__icon {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 50px;
+  color: #fff;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-bottom: 15px;
+}
+
