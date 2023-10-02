@@ -6,160 +6,158 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Personal website</title>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
     <header class="header">
+      <!-- <div class="greeting-wrap">
+        <div class="greeting"></div>
+          <h1 class="greeting-layer__title"> </h1>
+           <button class="greeting-layer__btn">click</button>
+        </div> -->
       <div class="container">
         <div class="wrap">
-      <div class="header__title header__title--active">
-          <h1 class="header__title-text">Фронтенд</h1>
-          <h3 class="header__text">разработчик</h3>
+      <div class="header__title">
+          <h1 class="header__title-subtitle">Фронтенд</h1>
+          <h3 class="header__title-text">разработчик</h3>
         </div>
       
         <div class="header__menu">
-            <ul class="header__list">
-              <li class="header__list-item">
-                <a class="header__link" href="#">обо мне</a>
+            <ul class="header__menu-list">
+              <li class="header__menu-list-item">
+                <a class="header__menu-list-item-link" href="#about">обо мне</a>
               </li>
-              <li class="header__list-item">
-                <a class="header__link" href="#">проекты</a>
+              <li class="header__menu-list-item">
+                <a class="header__menu-list-item-link" href="#projects">проекты</a>
               </li>
-              <li class="header__list-item">
-                <a class="header__link" href="#">контакты</a>
+              <li class="header__menu-list-item">
+                <a class="header__menu-list-item-link" href="#contacts">контакты</a>
               </li>
             </ul>
           </div>
       </div>
     
       </div>
-      <div class="header__line"> <img class="header__line-img" src="img/Union.png" alt=""></div>
-
-      <div class="greeting-wrap">
-        <div class="greeting"></div>
-          <h1 class="greeting-layer__title">hello</h1>
-           <button class="greeting-layer__btn">click</button>
-        </div>
+      <!-- <div class="header__line"> <img class="header__line-img" src="img/Union.png" alt=""></div> -->
     </header>
 
-    <main>
+  <main>
       <div class="container">
-      <section class="about">
+      <section id="about" class="about">
           <img
             class="about__img"
             src="./img/me2.jpg"
             alt="мое фото"
           />
           <div class="about__desc">
-          <h3 class="about__title title">Обо мне</h3>
-          <p class="about__text">
-            Lorem Ipsum - это текст-"рыба", часто используемый в печати и
-            вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на
-            латинице с начала XVI века. В то время некий безымянный печатниклатинице с начала XVI века. В то время некий безымянный печатник
+          <h3 class="about__desc-title title">Обо мне</h3>
+          <p class="about__desc-text">
+            Привет, я верстальщик. У меня пока есть только несколько небольших коммерческих проектов. Но я выгляжу многообещающей сейчас изучаю Фронтенд разработку. Над текстом нужно поработать блин
           </p>
         </div>
       </section>
 
       <section class="skills">
+        <h3 class="skills__title title">Скилы</h3>
         <div class="skills__wrap">
-          <p class="skills__title">Технологии</p>
-          <ul class="skills__list">
-            <li class="skills__list-item">HTML</li>
-            <li class="skills__list-item">CSS/SCSS</li>
-            <li class="skills__list-item">JavaScript</li>
-            <li class="skills__list-item">ThreeJs/WebGL</li>
-            <li class="skills__list-item">BEM</li>
-            <li class="skills__list-item">Webpack</li>
-            <li class="skills__list-item">Git</li>
-            <li class="skills__list-item">BEM</li>
-          </ul>
-        </div>
-        <div class="skills__wrap">
-          <p class="skills__title">Языки</p>
-          <ul class="skills__list">
-            <li class="skills__list-item">Русский</li>
-            <li class="skills__list-item">Английский</li>
-            <li class="skills__list-item">Китайский</li>
-          </ul>
+          <!-- <p class="skills__title">Технологии</p> -->
+         
+          <li class="skills__wrap-list"> <h3 class="skills__wrap-list-name">HTML</h3>
+            <span class="skills__wrap-list-bar"> <span class="skills__wrap-list_html"></span></span>
+          </li>
+          <li class="skills__wrap-list"> <h3 class="skills__wrap-list-name">CSS/SCSS</h3>
+            <span class="skills__wrap-list-bar"> <span class="skills__wrap-list_css _anim-item"></span></span>
+          </li>
+          <li class="skills__wrap-list"> <h3 class="skills__wrap-list-name">BEM</h3>
+            <span class="skills__wrap-list-bar"> <span class="skills__wrap-list_bem _anim-item"></span></span>
+          </li>
+          <li class="skills__wrap-list"> <h3 class="skills__wrap-list-name">Bootstrap</h3>
+            <span class="skills__wrap-list-bar"> <span class="skills__wrap-list_bt _anim-item"></span></span>
+          </li>
+          <li class="skills__wrap-list"> <h3 class="skills__wrap-list-name">Figma</h3>
+            <span class="skills__wrap-list-bar"> <span class="skills__wrap-list_figma _anim-item"></span></span>
+          </li>
+          <li class="skills__wrap-list"> <h3 class="skills__wrap-list-name">Photoshop</h3>
+            <span class="skills__wrap-list-bar"> <span class="skills__wrap-list_phs _anim-item"></span></span>
+          </li>
+          <li class="skills__wrap-list"> <h3 class="skills__wrap-list-name">JS</h3>
+            <span class="skills__wrap-list-bar"> <span class="skills__wrap-list_js _anim-item"></span></span>
+          </li>
+          <li class="skills__wrap-list"> <h3 class="skills__wrap-list-name">GIT</h3>
+            <span class="skills__wrap-list-bar"> <span class="skills__wrap-list_git _anim-item"></span></span>
+          </li>
+          <li class="skills__wrap-list"> <h3 class="skills__wrap-list-name">WebPack</h3>
+            <span class="skills__wrap-list-bar"> <span class="skills__wrap-list_wpack _anim-item"></span></span>
+          </li>
+          <p class="skills__wrap-lang title">Языки</p>
+          <li class="skills__wrap-list"> <h3 class="skills__wrap-list-name">Русский</h3>
+            <span class="skills__wrap-list-bar"> <span class="skills__wrap-list_rus _anim-item"></span></span>
+          <li class="skills__wrap-list"> <h3 class="skills__wrap-list-name">Английский</h3>
+            <span class="skills__wrap-list-bar"> <span class="skills__wrap-list_eng _anim-item"></span></span>
+          </li>
+          <li class="skills__wrap-list"> <h3 class="skills__wrap-list-name">Китайский</h3>
+            <span class="skills__wrap-list-bar"> <span class="skills__wrap-list_chn _anim-item"></span></span>
+          </li>
         </div>
       </section>
-      </div>
+      
 
-      <section class="projects"> 
-          <h3 class="projects__title title">Проекты</h3>
-        
+      <section id="projects" class="projects"> 
+          
+        <h3 class="projects__title title">Проекты</h3>
           <div class="projects__hr-scroll">
-            <div>
-              <button class="scroll-btn scroll-btn--prev">
-                <img class="btn" src="./img/icons/leftArrow.svg" alt="" >
+        
+              <button class="projects__hr-scroll-btn projects__hr-scroll-btn_prev">
+                <img class="projects__hr-scroll-btn-img" src="./img/icons/leftArrow.svg" alt="" >
               </button>
-            </div>
+            
 
-            <div class="projects__slider">
-            <div class="projects__slider-item">
-              <a class="projects__link" href="https://urgazievaai.github.io/weather-widget/"> 
-                <img class="projects__img" src="./img/Снимок экрана 2022-12-17 в 04.31.50.png" alt="weather widget">
+            <div class="projects__hr-scroll-slider">
+              <a class="projects__hr-scroll-slider-link" href="https://urgazievaai.github.io/weather-widget/"> 
+                <img class="projects__hr-scroll-slider-link-img" src="./img/Снимок экрана 2022-12-17 в 04.31.50.png" alt="weather widget">
               </a>
-            </div>
-            <div class="projects__slider-item">
-              <a class="projects__link" href="https://urgazievaai.github.io/weather-widget/"> 
-                <img class="projects__img" src="./img/8machine.jpg" alt="weather widget">
+              <a class="projects__hr-scroll-slider-link" href="https://urgazievaai.github.io/weather-widget/"> 
+                <img class="projects__hr-scroll-slider-link-img" src="./img/8machine.jpg" alt="weather widget">
               </a>
-            </div>
-            <div class="projects__slider-item">
-              <a class="projects__link" href="https://urgazievaai.github.io/weather-widget/"> 
-                <img class="projects__img" src="./img/adnan-mistry.jpg" alt="weather widget">
+              <a class="projects__hr-scroll-slider-link" href="https://urgazievaai.github.io/weather-widget/"> 
+                <img class="projects__hr-scroll-slider-link-img" src="./img/adnan-mistry.jpg" alt="weather widget">
               </a>
-            </div>
-            <div class="projects__slider-item">
-              <a class="projects__link" href="https://urgazievaai.github.io/weather-widget/"> 
-                <img class="projects__img" src="./img/adnan-mistry.jpg" alt="weather widget">
+              <a class="projects__hr-scroll-slider-link" href="https://urgazievaai.github.io/weather-widget/"> 
+                <img class="projects__hr-scroll-slider-link-img" src="./img/adnan-mistry.jpg" alt="weather widget">
               </a>
-            </div>
-            <div class="projects__slider-item">
-              <a class="projects__link" href="https://urgazievaai.github.io/weather-widget/"> 
-                <img class="projects__img" src="./img/adnan-mistry.jpg" alt="weather widget">
+              <a class="projects__hr-scroll-slider-link" href="https://urgazievaai.github.io/weather-widget/"> 
+                <img class="projects__hr-scroll-slider-link-img" src="./img/adnan-mistry.jpg" alt="weather widget">
               </a>
-            </div>
           </div>
             <div>
-              <button class="scroll-btn scroll-btn--next">
-               <img class="btn" src="./img/icons/rightArrow.svg" alt="">
+              <button class="projects__hr-scroll-btn projects__hr-scroll-btn_next">
+               <img class="projects__hr-scroll-btn-img" src="./img/icons/rightArrow.svg" alt="">
               </button>
             </div>
           </div>
-          
-          
-      </section>
+       </section>
 
-      <div class="container">
-      <section class="contacts">
+      <section id="contacts" class="contacts">
         <div class="contacts__wrap">
-          <h3 class="contacts__title title">Контакты</h3>
-          <div class="contacts__inner">
-            <a class="contacts__link contacts__link--size" href="tel:+79912981821" >
-              <img class="contacts__tel-icon"  src="./img/icons/phone-icon.svg" alt=""> 
-              +7 (991) 298 18 21
-            </a>
-          <a clas="contacts__link" href="https://github.com/">
-            <img class="contacts__icon" src="./img/icons/github-icon.svg" alt="">
+          <h3 class="contacts__wrap-title title">Контакты</h3>
+          <div class="contacts__wrap-inner">
+          <a class="contacts__wrap-inner-link" href="https://github.com/">
+            <img class="contacts__wrap-inner-link-icon" src="./img/icons/github-icon.svg" alt="">
           </a>
-          <a class="contacts__link contacts__link--size" href="mailto:urgazievaaige@gmail.com">
-            <img class="contacts__mail-icon" src="./img/icons/gmail-icon.svg" alt=""> urgazievaaige@gmail.com
+          <a class="contacts__wrap-inner-link" href="mailto:urgazievaaige@gmail.com">
+            <img class="contacts__wrap-inner-link-icon" src="./img/icons/gmail-icon.svg" alt="">
           </a>
-          <a clas="contacts__link" href="https://t.me/urgazievaai">
-            <img class="contacts__icon" src="./img/icons/telega.svg" alt="">
+          <a class="contacts__wrap-inner-link" href="https://t.me/urgazievaai">
+            <img class="contacts__wrap-inner-link-icon" src="./img/icons/telega.svg" alt="">
           </a>
-          <div></div>
-          <a clas="contacts__link" href="">
-            <img class="contacts__icon " src="./img/icons/insta-icon.svg" alt="">
-          </a>
-        </div>
         </div>
         </div>
       </section>
+    </div>
     </main>
   </body>
 </html>
