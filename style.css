@@ -71,6 +71,7 @@ body {
 .wrap {
   display: flex;
   justify-content: space-between;
+  position: relative;
   align-items: center;
   max-width: 100%;
   height: 600px;
@@ -78,16 +79,20 @@ body {
  
 }
 
+.animation {
+  z-index: 1;
+  margin-left: 50px;
+}
 
 /* надпись в шапке */
 .header__title {
   /* flex-basis: 50%; */
-  position: relative;
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #fff;
-  
+  z-index: 2;
 }
 
 .header__title:hover{
@@ -118,9 +123,13 @@ body {
   padding: 0 0 0 32px;
 }
 
+
+
 /* меню в шапке */
 
-
+.header__menu {
+  z-index: 2;
+}
 .header__menu-list {
   position: relative;
   display: flex;
@@ -167,22 +176,27 @@ body {
 .about {
   position: relative;
   display: flex;
+  width: 100%;
   justify-content: space-between;
   color: #fff;
   margin: 185px 0;
+  gap: 40px;
 }
 
 .about__img {
-  max-width: 290px;
-  max-height: 390px;
+  width: 40%;
+  height: 390px;
+  object-fit: cover;
 }
-
+.about__desc {
+  width: 50%;
+}
 .about__desc-text {
   font-family: 'Inter', sans-serif;
   font-size: 20px;
   font-weight: 400;
   padding: 15px;
-  max-width: 500px;
+  
 }
 
 /* section skills */
@@ -227,33 +241,48 @@ height: 14px;
 background: #ffffff;
 border-radius: 30px;
 overflow: hidden;
-transition: all 0.2s cubic-bezier(.25, .8, .25, 1);
 }
 
 
 /* уровень знания технологий */
 
-.skills__wrap-list_html {
-  height: 14px;
-  float: left;
-  border-radius: 30px;
-}
-.skills__wrap-list_html {
-  width: 90%;
-  background: #fffd7f;
-  animation: html_value 2s;
+.anim {
+  /* opacity: 0; */
+    width: 0;
+    height: 14px;
+    float: left;
+    border-radius: 30px;
+    background: #fffd7f;
+    transition: 0.3s width; 
+    /* animation: html_value 2s; */
+  }
+
+  /* transition: margin-right 2s, color 1s;} */
+.show {
+width: 90%;
+transition: all 0.5;
 }
 
-@keyframes html_value {
+
+ 
+#skills_html {
+  width: 90%;
+  height: 14px;
+float: left;
+border-radius: 30px;
+  background: #fffd7f;
+  /* animation: html_value 2s; */
+}
+/* @keyframes html_value {
   0%{
     width: 0%;
   }
   100%{
     width: 90%;
   }
-}
+} */
 
-.skills__wrap-list_css {
+#skills_css {
   width: 90%;
   height: 14px;
 float: left;
@@ -270,7 +299,7 @@ border-radius: 30px;
   }
 }
 
-.skills__wrap-list_bem {
+#skills_bem {
   width: 70%;
   height: 14px;
 float: left;
@@ -287,7 +316,7 @@ border-radius: 30px;
   }
 }
 
-.skills__wrap-list_bt {
+#skills_bt {
   width: 70%;
   height: 14px;
 float: left;
@@ -304,7 +333,7 @@ border-radius: 30px;
   }
 }
 
-.skills__wrap-list_figma {
+#skills_figma {
   width: 60%;
   height: 14px;
 float: left;
@@ -321,7 +350,7 @@ border-radius: 30px;
   }
 }
 
-.skills__wrap-list_phs {
+#skills_phs {
   width: 60%;
   height: 14px;
 float: left;
@@ -338,8 +367,8 @@ border-radius: 30px;
   }
 }
 
-.skills__wrap-list_js {
-  width: 50%;
+#skills_js {
+  width: 60%;
   height: 14px;
 float: left;
 border-radius: 30px;
@@ -351,11 +380,11 @@ border-radius: 30px;
     width: 0%;
   }
   100%{
-    width: 50%;
+    width: 60%;
   }
 }
 
-.skills__wrap-list_git {
+#skills_git {
   width: 50%;
   height: 14px;
 float: left;
@@ -372,8 +401,8 @@ border-radius: 30px;
   }
 }
 
-.skills__wrap-list_wpack {
-  width: 10%;
+#skills_wpack {
+  width: 30%;
   height: 14px;
 float: left;
 border-radius: 30px;
@@ -385,14 +414,14 @@ border-radius: 30px;
     width: 0%;
   }
   100%{
-    width: 10%;
+    width: 30%;
   }
 }
 
 /* уровень знания языков */
 
-.skills__wrap-list_rus {
-  width: 90%;
+#skills_rus {
+  width: 95%;
   height: 14px;
 float: left;
 border-radius: 30px;
@@ -405,12 +434,12 @@ border-radius: 30px;
     width: 0%;
   }
   100%{
-    width: 90%;
+    width: 95%;
   }
 }
 
-.skills__wrap-list_eng {
-  width: 30%;
+#skills_eng {
+  width: 50%;
   height: 14px;
 float: left;
 border-radius: 30px;
@@ -423,12 +452,12 @@ border-radius: 30px;
     width: 0%;
   }
   100%{
-    width: 30%;
+    width: 50%;
   }
 }
 
-.skills__wrap-list_chn {
-  width: 30%;
+#skills_chn {
+  width: 50%;
   height: 14px;
   float: left;
   border-radius: 30px;
@@ -441,9 +470,9 @@ border-radius: 30px;
     width: 0%;
   }
   100%{
-    width: 30%;
+    width: 50%;
   }
-}
+} 
 
 /* section projects */
 
