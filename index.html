@@ -25,7 +25,7 @@
           <h1 class="header__title-subtitle">Фронтенд</h1>
           <h3 class="header__title-text">разработчик</h3>
         </div>
-      
+        <div class="animation"><img src="./img/ghost.gif" alt=""></div>
         <div class="header__menu">
             <ul class="header__menu-list">
               <li class="header__menu-list-item">
@@ -56,53 +56,59 @@
           <div class="about__desc">
           <h3 class="about__desc-title title">Обо мне</h3>
           <p class="about__desc-text">
-            Привет, я верстальщик. У меня пока есть только несколько небольших коммерческих проектов. Но я выгляжу многообещающей сейчас изучаю Фронтенд разработку. Над текстом нужно поработать блин
+            Привет! Я Айгерим, фронтенд-разработчик, учу фронтенд разработку более года, в основном самостоятельно, создаю проекты, о которых можно узнать ниже. Есть небольшой опыт работы в команде, где оптимизировала CEO-верстку, улучшая производительность. Также сейчас бесплатно обучаю HTML и CSS двух соседских мальчиков. Приглашаю к ознакомлению с портфолио.
           </p>
         </div>
       </section>
 
       <section class="skills">
         <h3 class="skills__title title">Скилы</h3>
-        <div class="skills__wrap">
+        <ul class="skills__wrap">
           <!-- <p class="skills__title">Технологии</p> -->
          
           <li class="skills__wrap-list"> <h3 class="skills__wrap-list-name">HTML</h3>
-            <span class="skills__wrap-list-bar"> <span class="skills__wrap-list_html"></span></span>
+            <span class="skills__wrap-list-bar"> <span id="skills_html"></span></span>
           </li>
           <li class="skills__wrap-list"> <h3 class="skills__wrap-list-name">CSS/SCSS</h3>
-            <span class="skills__wrap-list-bar"> <span class="skills__wrap-list_css _anim-item"></span></span>
+            <span class="skills__wrap-list-bar"> <span id="skills_css"></span></span>
           </li>
           <li class="skills__wrap-list"> <h3 class="skills__wrap-list-name">BEM</h3>
-            <span class="skills__wrap-list-bar"> <span class="skills__wrap-list_bem _anim-item"></span></span>
+            <span class="skills__wrap-list-bar"> <span id="skills_bem"></span></span>
           </li>
           <li class="skills__wrap-list"> <h3 class="skills__wrap-list-name">Bootstrap</h3>
-            <span class="skills__wrap-list-bar"> <span class="skills__wrap-list_bt _anim-item"></span></span>
+            <span class="skills__wrap-list-bar"> <span id="skills_bt"></span></span>
           </li>
           <li class="skills__wrap-list"> <h3 class="skills__wrap-list-name">Figma</h3>
-            <span class="skills__wrap-list-bar"> <span class="skills__wrap-list_figma _anim-item"></span></span>
+            <span class="skills__wrap-list-bar"> <span id="skills_figma"></span></span>
           </li>
           <li class="skills__wrap-list"> <h3 class="skills__wrap-list-name">Photoshop</h3>
-            <span class="skills__wrap-list-bar"> <span class="skills__wrap-list_phs _anim-item"></span></span>
+            <span class="skills__wrap-list-bar"> <span id="skills_phs"></span></span>
           </li>
           <li class="skills__wrap-list"> <h3 class="skills__wrap-list-name">JS</h3>
-            <span class="skills__wrap-list-bar"> <span class="skills__wrap-list_js _anim-item"></span></span>
+            <span class="skills__wrap-list-bar"> <span id="skills_js"></span></span>
           </li>
           <li class="skills__wrap-list"> <h3 class="skills__wrap-list-name">GIT</h3>
-            <span class="skills__wrap-list-bar"> <span class="skills__wrap-list_git _anim-item"></span></span>
+            <span class="skills__wrap-list-bar"> <span id="skills_git"></span></span>
           </li>
           <li class="skills__wrap-list"> <h3 class="skills__wrap-list-name">WebPack</h3>
-            <span class="skills__wrap-list-bar"> <span class="skills__wrap-list_wpack _anim-item"></span></span>
+            <span class="skills__wrap-list-bar"> <span id="skills_wpack"></span></span>
+          </li>
+          <li class="skills__wrap-list"> <h3 class="skills__wrap-list-name">TypeScript</h3>
+            <span class="skills__wrap-list-bar"> <span id="skills_ts"></span></span>
+          </li>
+          <li class="skills__wrap-list"> <h3 class="skills__wrap-list-name">Angular</h3>
+            <span class="skills__wrap-list-bar"> <span id="skills_angular"></span></span>
           </li>
           <p class="skills__wrap-lang title">Языки</p>
           <li class="skills__wrap-list"> <h3 class="skills__wrap-list-name">Русский</h3>
-            <span class="skills__wrap-list-bar"> <span class="skills__wrap-list_rus _anim-item"></span></span>
+            <span class="skills__wrap-list-bar"> <span id="skills_rus"></span></span>
           <li class="skills__wrap-list"> <h3 class="skills__wrap-list-name">Английский</h3>
-            <span class="skills__wrap-list-bar"> <span class="skills__wrap-list_eng _anim-item"></span></span>
+            <span class="skills__wrap-list-bar"> <span id="skills_eng"></span></span>
           </li>
           <li class="skills__wrap-list"> <h3 class="skills__wrap-list-name">Китайский</h3>
-            <span class="skills__wrap-list-bar"> <span class="skills__wrap-list_chn _anim-item"></span></span>
+            <span class="skills__wrap-list-bar"> <span id="skills_chn"></span></span>
           </li>
-        </div>
+        </ul>
       </section>
       
 
@@ -111,30 +117,27 @@
         <h3 class="projects__title title">Проекты</h3>
           <div class="projects__hr-scroll">
         
-              <button class="projects__hr-scroll-btn projects__hr-scroll-btn_prev">
+              <button id="prev-btn" class="projects__hr-scroll-btn projects__hr-scroll-btn_prev">
                 <img class="projects__hr-scroll-btn-img" src="./img/icons/leftArrow.svg" alt="" >
               </button>
             
 
             <div class="projects__hr-scroll-slider">
+              <a class="projects__hr-scroll-slider-link" href="https://podcast-questions-19424.web.app"> 
+                <img class="projects__hr-scroll-slider-link-img" src="./img/podcast ques photo.png" alt="podcast questions form">
+              </a>
               <a class="projects__hr-scroll-slider-link" href="https://urgazievaai.github.io/weather-widget/"> 
                 <img class="projects__hr-scroll-slider-link-img" src="./img/Снимок экрана 2022-12-17 в 04.31.50.png" alt="weather widget">
               </a>
-              <a class="projects__hr-scroll-slider-link" href="https://urgazievaai.github.io/weather-widget/"> 
-                <img class="projects__hr-scroll-slider-link-img" src="./img/8machine.jpg" alt="weather widget">
+              <a class="projects__hr-scroll-slider-link" href="https://urgazievaai.github.io/favorite-prominent-person/"> 
+                <img class="projects__hr-scroll-slider-link-img" src="./img/grandpa-webpage.png" alt="favorite prominent person">
               </a>
-              <a class="projects__hr-scroll-slider-link" href="https://urgazievaai.github.io/weather-widget/"> 
-                <img class="projects__hr-scroll-slider-link-img" src="./img/adnan-mistry.jpg" alt="weather widget">
-              </a>
-              <a class="projects__hr-scroll-slider-link" href="https://urgazievaai.github.io/weather-widget/"> 
-                <img class="projects__hr-scroll-slider-link-img" src="./img/adnan-mistry.jpg" alt="weather widget">
-              </a>
-              <a class="projects__hr-scroll-slider-link" href="https://urgazievaai.github.io/weather-widget/"> 
-                <img class="projects__hr-scroll-slider-link-img" src="./img/adnan-mistry.jpg" alt="weather widget">
+              <a class="projects__hr-scroll-slider-link" href="https://urgazievaai.github.io/responsive-webpage/"> 
+                <img class="projects__hr-scroll-slider-link-img" src="./img/blingpay.png" alt="responsive webpage">
               </a>
           </div>
             <div>
-              <button class="projects__hr-scroll-btn projects__hr-scroll-btn_next">
+              <button id="next-btn" class="projects__hr-scroll-btn projects__hr-scroll-btn_next">
                <img class="projects__hr-scroll-btn-img" src="./img/icons/rightArrow.svg" alt="">
               </button>
             </div>
@@ -145,7 +148,7 @@
         <div class="contacts__wrap">
           <h3 class="contacts__wrap-title title">Контакты</h3>
           <div class="contacts__wrap-inner">
-          <a class="contacts__wrap-inner-link" href="https://github.com/">
+          <a class="contacts__wrap-inner-link" href="https://github.com/urgazievaai">
             <img class="contacts__wrap-inner-link-icon" src="./img/icons/github-icon.svg" alt="">
           </a>
           <a class="contacts__wrap-inner-link" href="mailto:urgazievaaige@gmail.com">
